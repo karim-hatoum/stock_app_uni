@@ -93,12 +93,12 @@ class _HomePageState extends State<HomePage> {
                 String productName = product['title'].toString();
                 var productId = product['id'];
 
-                // Convert productId to integer if it's a string
+                
                 if (productId is String) {
-                  productId = int.tryParse(productId) ?? 0; // Default to 0 if parsing fails
+                  productId = int.tryParse(productId) ?? 0; 
                 }
 
-                // Check if amount exists and parse it safely
+                
                 int amount = 0;
                 if (product['amount'] != null) {
                   amount = int.tryParse(product['amount'].toString()) ?? 0;
