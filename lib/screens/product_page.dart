@@ -66,7 +66,7 @@ class ProductPage extends StatelessWidget {
             return Center(child: Text('Product not found.'));
           } else {
             final product = snapshot.data!;
-            // Parse the amount and determine availability
+            
             int amount = 0;
             if (product['amount'] != null) {
               amount = int.tryParse(product['amount'].toString()) ?? 0;
